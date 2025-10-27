@@ -3,13 +3,18 @@ import React from "react";
 
 export default function HeroSection() {
   return (
-    <section className="relative h-[90vh] flex flex-col justify-center items-center text-white text-center overflow-hidden">
+    <section className="relative bg-gradient-to-b from-sky-200 via-sky-300 to-blue-500">
       {/* Background Image */}
-      <img
+      {/* <img
         src="https://images.unsplash.com/photo-1582623838120-455da222cdc7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1974"
         alt="Great Barrier Reef"
-        className="absolute inset-0 w-full h-full object-cover z-0"
-      />
+        className="absolute top-1/2 left-1/2 min-w-full min-h-full transform -translate-x-1/2 -translate-y-1/2 z-0"
+      /> */}
+      <div className="absolute top-10 left-5 w-24 opacity-80 animate-bounce">
+  <img src="src/assets/49346647_9229441.svg" alt="Fish" />
+</div>
+<div className="absolute bottom-0 left-20 w-6 h-6 bg-white/30 rounded-full animate-bounce delay-200"></div>
+
 
       {/* Dark Overlay for contrast */}
       <div className="absolute inset-0 bg-black/40 z-0"></div>
