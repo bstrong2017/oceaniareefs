@@ -11,7 +11,7 @@ export default function HeroSection() {
         className="absolute top-1/2 left-1/2 min-w-full min-h-full transform -translate-x-1/2 -translate-y-1/2 z-0"
       /> */}
       <div className="absolute top-10 left-5 w-24 opacity-80 animate-bounce">
-  <img src="src/assets/49346647_9229441.svg" alt="Fish" />
+  <img src="public/9229453.jpg" alt="Fish" />
 </div>
 <div className="absolute bottom-0 left-20 w-6 h-6 bg-white/30 rounded-full animate-bounce delay-200"></div>
 
