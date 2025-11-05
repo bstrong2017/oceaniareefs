@@ -24,15 +24,15 @@ export default function HistorySection() {
         regions in Australia with high
         bleaching rates.</p>
       <div>
-      <ul className="right-align">
-          <li><strong>Darwin north Australia</strong></li>
-          <li><strong>Scott Reef west Australia</strong></li>
-          <li><strong>Kimberley Coast north-west Australia</strong></li>
-          <li><strong>Southern Great Barrier Reef</strong></li>
-          <li><strong>Pompey and Swain Reefs</strong></li>
-          <li><strong>South-east Great Barrier</strong></li>
-          <li><strong>Torres Strait and far northern Great Barrier Reef</strong></li>
-        </ul>
+        <div>
+          <h3> Darwin north Australia</h3>
+          <h3> Scott Reef west Australia</h3>
+          <h3> Kimberley Coast north-west Australia</h3>
+          <h3> Southern Great Barrier Reef</h3>
+          <h3> Pompey and Swain Reefs</h3>
+          <h3> South-east Great Barrier</h3>
+          <h3>Torres Strait and far northern Great Barrier Reef</h3>
+        </div>
       </div>
       <h2>Discovery</h2>
       <p>Coral Bleaching Trends ​
