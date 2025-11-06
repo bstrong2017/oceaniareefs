@@ -1,5 +1,8 @@
 // src/components/HistorySection.jsx
 import React from "react";
+// src/components/HistorySection.jsx
+import '../App.css';   // not './App.css'
+
 // import { Image, View, StyleSheet } from 'react-native';
 
 export default function HistorySection() {
@@ -33,6 +36,17 @@ export default function HistorySection() {
           <h3> South-east Great Barrier</h3>
           <h3>Torres Strait and far northern Great Barrier Reef</h3>
         </div>
+        <div style={{ textAlign: "center", marginTop: "20px" }}>
+          <img src="src/assets/australian_df_map.png" 
+          cstyle={{
+            width: "200px",          // controls image size
+            height: "auto",          // maintains aspect ratio
+            borderRadius: "15px",    // rounded corners
+            objectFit: "cover",      // makes image fit nicely
+            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)" // optional subtle shadow
+          }}
+          alt="map" />
+          </div>
       </div>
       <h2>Discovery</h2>
       <p>Coral Bleaching Trends ​

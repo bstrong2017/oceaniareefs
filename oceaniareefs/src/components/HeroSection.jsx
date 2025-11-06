@@ -3,15 +3,17 @@ import React from "react";
 
 export default function HeroSection() {
   return (
-    <section className="relative bg-gradient-to-b from-sky-200 via-sky-300 to-blue-500">
+    <section className="relative overflow-hidden max-w-screen w-full mx-auto bg-gradient-to-b from-sky-200 via-sky-300 to-blue-500">
       {/* Background Image */}
       {/* <img
         src="https://images.unsplash.com/photo-1582623838120-455da222cdc7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1974"
         alt="Great Barrier Reef"
         className="absolute top-1/2 left-1/2 min-w-full min-h-full transform -translate-x-1/2 -translate-y-1/2 z-0"
       /> */}
-      <div className="absolute top-10 left-5 w-24 opacity-80 animate-bounce">
-  <img src="/9229453.jpg" alt="Fish" />
+      <div className="w-full flex justify-center overflow-hidden">
+  <img src="/9229453.jpg" 
+  className="max-w-full h-auto object-contain mx-auto"
+  alt="Fish" />
 </div>
 <div className="absolute bottom-0 left-20 w-6 h-6 bg-white/30 rounded-full animate-bounce delay-200"></div>
 
@@ -22,8 +24,9 @@ export default function HeroSection() {
       {/* Text Content */}
       <div className="z-10 px-6">
         <h1 className="text-5xl md:text-6xl font-bold italic drop-shadow-lg">
-        Data-Driven Solutions for Cost-Effective Conservation
+        Oceania Coral Reefs
         </h1>
+        <h2>Data-Driven Solutions for Cost-Effective Conservation</h2>
       </div>
 
       {/* Wavy Bottom Divider */}
