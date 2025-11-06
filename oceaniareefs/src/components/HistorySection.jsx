@@ -20,13 +20,39 @@ export default function HistorySection() {
         organisms. While coral reefs contain and provide shelter to over 800 different aquatic 
         species, the structure of coral reefs protects coastal communities.
       </p>
+      <div style={{  display: "flex",textAlign: "center", gap: "20px", marginTop: 20 }}>
+      <img
+          src="/health_reef.png"
+          alt="healthy reef"
+          loading="lazy"
+          style={{
+            width: 400,          // smaller size
+            height: "auto",
+            borderRadius: 16,    // rounded corners
+            objectFit: "cover",
+            boxShadow: "0 4px 12px rgba(0,0,0,0.18)"
+          }}
+        />
+         <img
+          src="/bleached reef.png"
+          alt="healthy reef"
+          loading="lazy"
+          style={{
+            width: 400,          // smaller size
+            height: "auto",
+            borderRadius: 16,    // rounded corners
+            objectFit: "cover",
+            boxShadow: "0 4px 12px rgba(0,0,0,0.18)"
+          }}
+        />
+      </div>
       <h2>Data Methods</h2>
       <p>Imported and cleaned Kaggle’s Global Bleaching Environmental dataset (limited to Oceania → 
         2,956 entries).</p>
       <p>Focused on 6 key coral reef
         regions in Australia with high
         bleaching rates.</p>
-      <div>
+      <div >
         <div>
           <h3> Darwin north Australia</h3>
           <h3> Scott Reef west Australia</h3>
@@ -37,7 +63,7 @@ export default function HistorySection() {
           <h3>Torres Strait and far northern Great Barrier Reef</h3>
         </div>
       </div>
-      <div style={{ textAlign: "left", marginTop: 20 }}>
+      <div style={{  display: "flex",textAlign: "left", gap: "20px", marginTop: 20 }}>
         <img
           src="/australian_df_map.png"
           alt="map"
@@ -50,27 +76,68 @@ export default function HistorySection() {
             boxShadow: "0 4px 12px rgba(0,0,0,0.18)"
           }}
         />
-      </div>
-      <h2>Discovery</h2>
-      <p>Coral Bleaching Trends ​
-        Strong correlation: climate temperature peaks → bleaching spikes​
-        Other contributing factors: windspeed,turbidity, thermal anomalies​
-        Sudden peaks (1998, 2002, 2016) showbleaching is non-linear, not constant</p>
-        <div style={{ textAlign: "left", marginTop: 20 }}>
         <img
-          src="/coral_heatmap.png"
-          alt="heatmap"
+          src="/Reef_by_severity.png"
+          alt="severity"
           loading="lazy"
           style={{
-            width: 500,          // smaller size
+            width: 800,          // smaller size
             height: "auto",
             borderRadius: 16,    // rounded corners
             objectFit: "cover",
             boxShadow: "0 4px 12px rgba(0,0,0,0.18)"
           }}
         />
+
+      </div>
+      <h2>Discovery</h2>
+      <p>Coral Bleaching Trends ​
+        Strong correlation: climate temperature peaks → bleaching spikes​
+        Other contributing factors: windspeed,turbidity, thermal anomalies​
+        Sudden peaks (1998, 2002, 2016) showbleaching is non-linear, not constant</p>
+        <div style={{  display: "flex",textAlign: "left", gap: "20px", marginTop: 20 }}>
+        <img
+          src="/coral_heatmap.png"
+          alt="heatmap"
+          loading="lazy"
+          style={{
+            width: 600,          // smaller size
+            height: "auto",
+            borderRadius: 16,    // rounded corners
+            objectFit: "cover",
+            boxShadow: "0 4px 12px rgba(0,0,0,0.18)"
+          }}
+        />
+         <img
+        src="/loess trend .png"
+        alt="trend img"
+        style={{
+          width: 650,
+          height: "auto",
+          borderRadius: 12,
+          objectFit: "cover",
+          boxShadow: "0 4px 10px rgba(0,0,0,0.2)"
+        }}
+      />
       </div>
       <h2>Innovative Solutions</h2>
+      <div style={{ display: "flex", justifyContent: "center", gap: 20, flexWrap: "wrap", padding: 24 }}>
+      <img
+        src="/linear_regress.png"
+        alt="Left"
+        style={{ width: 260, height: 200, objectFit: "cover", borderRadius: 14, boxShadow: "0 8px 22px rgba(0,0,0,0.15)" }}
+      />
+      <img
+        src="/tuned_forest.png"
+        alt="Center"
+        style={{ width: 350, height: 300, objectFit: "cover", borderRadius: 16, boxShadow: "0 10px 28px rgba(0,0,0,0.18)" }}
+      />
+      <img
+        src="/XGBoost.png"
+        alt="Right"
+        style={{ width: 260, height: 200, objectFit: "cover", borderRadius: 14, boxShadow: "0 8px 22px rgba(0,0,0,0.15)" }}
+      />
+    </div>
       <h2>Looking Ahead</h2>
       <p>Continue to expand and update data sources.​
         Continue to refine models with new data.​
@@ -82,10 +149,12 @@ export default function HistorySection() {
       <p>Global Bleaching Environment Data set: <a>https://www.kaggle.com/datasets/pnminh95/global-bleaching-environmental</a></p>
       <p>Github: </p>
       <h2>References</h2>
+      <div style={{ textAlign: "left", marginTop: 20 }}>
       <p>pnminh95. (n.d.). Global bleaching environmental [Data set]. Kaggle. Global Bleaching Environmental dataset </p>
       <p>Rosane, O. (2021). 98% of the Great Barrier Reef has been affected by coral bleaching. World Economic Forum. World Economic Forum.     </p>
-      <p classname = "align-text-right">(n.d.). Great Barrier Reef Timeline. GBR Biology. GBR Biology .</p>
+      <p>(n.d.). Great Barrier Reef Timeline. GBR Biology. GBR Biology .</p>
       <p>Yeung, J.(2025). Australia’s Great Barrier Reef devastated by worst coral bleaching on record, new report finds. CNN Climate. CNN.</p>
+      </div>
     </section>
     
   );

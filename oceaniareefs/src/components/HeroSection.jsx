@@ -10,10 +10,18 @@ export default function HeroSection() {
         alt="Great Barrier Reef"
         className="absolute top-1/2 left-1/2 min-w-full min-h-full transform -translate-x-1/2 -translate-y-1/2 z-0"
       /> */}
-      <div className="w-full flex justify-center overflow-hidden">
+      <div style={{
+          width: "100%",
+          display: "flex",
+          justifyContent: "center",
+          overflow: "visible",
+          position: "relative",
+          zIndex: 5,           // keep fish above the dark overlay
+          padding: "12px 0"
+        }}>
   <img src="/9229453.jpg" 
-  className="max-w-full h-auto object-contain mx-auto"
   alt="Fish" />
+  
 </div>
 <div className="absolute bottom-0 left-20 w-6 h-6 bg-white/30 rounded-full animate-bounce delay-200"></div>
 
@@ -33,6 +41,7 @@ export default function HeroSection() {
       <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0] z-10">
         <svg
           className="relative block w-[calc(100%+1.3px)] h-[80px]"
+          style = {{width: "100%",transform: "scaleX(1.2)"}}
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"
           preserveAspectRatio="none"
