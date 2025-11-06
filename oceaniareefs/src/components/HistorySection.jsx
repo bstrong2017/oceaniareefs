@@ -45,6 +45,18 @@ export default function HistorySection() {
             boxShadow: "0 4px 12px rgba(0,0,0,0.18)"
           }}
         />
+        <img
+          src="/francisco-jesus-navarro-hernandez-dtCTfjTEOgg-unsplash (1).jpg"
+          alt="unsplash"
+          loading="lazy"
+          style={{
+            width: 400,          // smaller size
+            height: "auto",
+            borderRadius: 16,    // rounded corners
+            objectFit: "cover",
+            boxShadow: "0 4px 12px rgba(0,0,0,0.18)"
+          }}
+        />
       </div>
       <h2>Data Methods</h2>
       <p>Imported and cleaned Kaggle’s Global Bleaching Environmental dataset (limited to Oceania → 
@@ -88,13 +100,17 @@ export default function HistorySection() {
             boxShadow: "0 4px 12px rgba(0,0,0,0.18)"
           }}
         />
+        
 
       </div>
       <h2>Discovery</h2>
-      <p>Coral Bleaching Trends ​
+      <p>The environmental factors provided show a clear correlation to bleaching; as climate temperature 
+        peaks in intense ranges, so does bleaching. 
+        Coral Bleaching Trends:
         Strong correlation: climate temperature peaks → bleaching spikes​
         Other contributing factors: windspeed,turbidity, thermal anomalies​
-        Sudden peaks (1998, 2002, 2016) showbleaching is non-linear, not constant</p>
+        Sudden peaks (1998, 2002, 2016) show bleaching is non-linear, not constant.In the Loess Trendline graph, 
+        there were a lot of unusually high recorded numbers of temperature means in the coral reef regions.</p>
         <div style={{  display: "flex",textAlign: "left", gap: "20px", marginTop: 20 }}>
         <img
           src="/coral_heatmap.png"
@@ -121,6 +137,19 @@ export default function HistorySection() {
       />
       </div>
       <h2>Innovative Solutions</h2>
+      <p>Using a baseline linear regression model, Random Forest model, Extreme Gradient Boosting model, and 
+        Support Vector regression model, we whether bleaching can be predicted. As the baseline 
+        linear regression did not perform well, with a accuracy of 29%, we tested the Random Forest, XGBoost model,
+       and SVR model. The accuracy improved the most under the Random Forest model. 
+       We created a Predicted coral bleaching under environmental stress scenario to observe how bleaching 
+        might change. The model is made to mimic temperature increases paired with different increases in 
+        thermal stress anomalies. The predictive scenarios show us potential peaks between 2018 to 2030. 
+        We found that in instances where the temperature increases 0.9 and the thermal stress anomalies 
+        increase 0.6 yearly, there is a sharp increase in bleaching followed by steep decline and plateau. 
+        Looking at years past 2018, we can compare the real change in bleaching percentage to the predicted 
+        scenario. In the model, we see that 2020, 2022, 2024, 2029, and 2030 have sharp increases in bleaching. 
+        In researched data from CNN, we see that the years 2020, 2022, and 2024 all had temperature spikes leading 
+        to increased bleaching (Yeung, 2025). </p>
       <div style={{ display: "flex", justifyContent: "center", gap: 20, flexWrap: "wrap", padding: 24 }}>
       <img
         src="/linear_regress.png"
@@ -139,12 +168,12 @@ export default function HistorySection() {
       />
     </div>
       <h2>Looking Ahead</h2>
-      <p>Continue to expand and update data sources.​
-        Continue to refine models with new data.​
-        Implementation of real-time early monitoring systems.​
-      Collaboration among different conservation organizations.​
-      Promotion of bleaching awareness to the general public.​
-      Establish a Universal strategy for Coral Reef conservation.</p>
+      <p>These data-driven insights emphasize the severity of the development of early monitoring systems 
+        that merge real-time satellite data, temperature sensing, as well as machine learning to detect any 
+        preemptive warnings.The implementation of these early monitoring systems introduces a new era for 
+        conservation efforts such as fishing restrictions, increased coral shading, and other temperature
+        precautions. The most important contribution to early monitoring will be providing the most recent 
+        data to have a thorough system for conservation. </p>
       <h2>Links</h2>
       <p>Global Bleaching Environment Data set: <a>https://www.kaggle.com/datasets/pnminh95/global-bleaching-environmental</a></p>
       <p>Github: </p>
