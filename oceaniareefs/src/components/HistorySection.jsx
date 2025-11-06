@@ -36,23 +36,40 @@ export default function HistorySection() {
           <h3> South-east Great Barrier</h3>
           <h3>Torres Strait and far northern Great Barrier Reef</h3>
         </div>
-        <div style={{ textAlign: "center", marginTop: "20px" }}>
-          <img src="src/assets/australian_df_map.png" 
-          cstyle={{
-            width: "200px",          // controls image size
-            height: "auto",          // maintains aspect ratio
-            borderRadius: "15px",    // rounded corners
-            objectFit: "cover",      // makes image fit nicely
-            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)" // optional subtle shadow
+      </div>
+      <div style={{ textAlign: "left", marginTop: 20 }}>
+        <img
+          src="/australian_df_map.png"
+          alt="map"
+          loading="lazy"
+          style={{
+            width: 500,          // smaller size
+            height: "auto",
+            borderRadius: 16,    // rounded corners
+            objectFit: "cover",
+            boxShadow: "0 4px 12px rgba(0,0,0,0.18)"
           }}
-          alt="map" />
-          </div>
+        />
       </div>
       <h2>Discovery</h2>
       <p>Coral Bleaching Trends ​
         Strong correlation: climate temperature peaks → bleaching spikes​
         Other contributing factors: windspeed,turbidity, thermal anomalies​
         Sudden peaks (1998, 2002, 2016) showbleaching is non-linear, not constant</p>
+        <div style={{ textAlign: "left", marginTop: 20 }}>
+        <img
+          src="/coral_heatmap.png"
+          alt="heatmap"
+          loading="lazy"
+          style={{
+            width: 500,          // smaller size
+            height: "auto",
+            borderRadius: 16,    // rounded corners
+            objectFit: "cover",
+            boxShadow: "0 4px 12px rgba(0,0,0,0.18)"
+          }}
+        />
+      </div>
       <h2>Innovative Solutions</h2>
       <h2>Looking Ahead</h2>
       <p>Continue to expand and update data sources.​
@@ -62,7 +79,7 @@ export default function HistorySection() {
       Promotion of bleaching awareness to the general public.​
       Establish a Universal strategy for Coral Reef conservation.</p>
       <h2>Links</h2>
-      <p>Global Bleaching Environment Data set: https://www.kaggle.com/datasets/pnminh95/global-bleaching-environmental</p>
+      <p>Global Bleaching Environment Data set: <a>https://www.kaggle.com/datasets/pnminh95/global-bleaching-environmental</a></p>
       <p>Github: </p>
       <h2>References</h2>
       <p>pnminh95. (n.d.). Global bleaching environmental [Data set]. Kaggle. Global Bleaching Environmental dataset </p>
