@@ -198,7 +198,7 @@ export default function HistorySection() {
         </div>
       <h2>Links</h2>
       <p>Global Bleaching Environment Data set: <a>https://www.kaggle.com/datasets/pnminh95/global-bleaching-environmental</a></p>
-      <p>Github: </p>
+      <p>Github: <a>https://github.com/bstrong2017/Data-Driven-Solutions-for-Oceania-Reefs.git</a></p>
       <h2>References</h2>
       <div style={{ textAlign: "left", marginTop: 20 }}>
       <p>pnminh95. (n.d.). Global bleaching environmental [Data set]. Kaggle. Global Bleaching Environmental dataset </p>
