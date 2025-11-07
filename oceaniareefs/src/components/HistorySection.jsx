@@ -24,7 +24,7 @@ export default function HistorySection() {
       flexWrap: "wrap",          // allow wrapping on small screens
       justifyContent: "center",  // center images in the row
       gap: 20,
-      marginTop: 20, }}>
+      marginTop: 20 }}>
 
       <img
           src="/health_reef.png"
@@ -36,7 +36,7 @@ export default function HistorySection() {
             borderRadius: 16,
             objectFit: "cover",
             boxShadow: "0 4px 12px rgba(0,0,0,0.18)",
-            display: "block",
+            display: "block"
           }}
         />
          <img
@@ -49,7 +49,7 @@ export default function HistorySection() {
             borderRadius: 16,
             objectFit: "cover",
             boxShadow: "0 4px 12px rgba(0,0,0,0.18)",
-            display: "block",
+            display: "block"
           }}
         />
         <img
@@ -62,7 +62,7 @@ export default function HistorySection() {
             borderRadius: 16,
             objectFit: "cover",
             boxShadow: "0 4px 12px rgba(0,0,0,0.18)",
-            display: "block",
+            display: "block"
           }}
         />
       </div>
@@ -83,17 +83,22 @@ export default function HistorySection() {
           <h3>Torres Strait and far northern Great Barrier Reef</h3>
         </div>
       </div>
-      <div style={{  display: "flex",textAlign: "left", gap: "20px", marginTop: 20 }}>
+      <div style={{  display: "flex",
+      flexWrap: "wrap",          // allow wrapping on small screens
+      justifyContent: "center",  // center images in the row
+      gap: 20,
+      marginTop: 20 }}>
         <img
           src="/australian_df_map.png"
           alt="map"
           loading="lazy"
           style={{
-            width: 200,          // smaller size
+            width: "min(220px, 80vw)",  // 220px on desktop, shrinks on phones
             height: "auto",
-            borderRadius: 16,    // rounded corners
+            borderRadius: 16,
             objectFit: "cover",
-            boxShadow: "0 4px 12px rgba(0,0,0,0.18)"
+            boxShadow: "0 4px 12px rgba(0,0,0,0.18)",
+            display: "block"
           }}
         />
         <img
@@ -101,11 +106,12 @@ export default function HistorySection() {
           alt="severity"
           loading="lazy"
           style={{
-            width: 200,          // smaller size
+            width: "min(220px, 80vw)",  // 220px on desktop, shrinks on phones
             height: "auto",
-            borderRadius: 16,    // rounded corners
+            borderRadius: 16,
             objectFit: "cover",
-            boxShadow: "0 4px 12px rgba(0,0,0,0.18)"
+            boxShadow: "0 4px 12px rgba(0,0,0,0.18)",
+            display: "block"
           }}
         />
         
@@ -119,28 +125,34 @@ export default function HistorySection() {
         Other contributing factors: windspeed,turbidity, thermal anomalies​
         Sudden peaks (1998, 2002, 2016) show bleaching is non-linear, not constant.In the Loess Trendline graph, 
         there were a lot of unusually high recorded numbers of temperature means in the coral reef regions.</p>
-        <div style={{  display: "flex",textAlign: "left", gap: "20px", marginTop: 20 }}>
+        <div style={{   display: "flex",
+        flexWrap: "wrap",
+        justifyContent: "center",
+        gap: 20,
+        marginTop: 20}}>
         <img
           src="/coral_heatmap.png"
           alt="heatmap"
           loading="lazy"
           style={{
-            width: 200,          // smaller size
+            width: "min(220px, 80vw)",
             height: "auto",
-            borderRadius: 16,    // rounded corners
+            borderRadius: 16,
             objectFit: "cover",
-            boxShadow: "0 4px 12px rgba(0,0,0,0.18)"
+            boxShadow: "0 4px 12px rgba(0,0,0,0.18)",
+            display: "block"
           }}
         />
          <img
         src="/loess trend .png"
         alt="trend img"
         style={{
-          width: 250,
+          width: "min(220px, 80vw)",
           height: "auto",
-          borderRadius: 12,
+          borderRadius: 16,
           objectFit: "cover",
-          boxShadow: "0 4px 10px rgba(0,0,0,0.2)"
+          boxShadow: "0 4px 12px rgba(0,0,0,0.18)",
+          display: "block"
         }}
       />
       </div>
