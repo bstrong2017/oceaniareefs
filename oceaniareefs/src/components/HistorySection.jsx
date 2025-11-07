@@ -26,7 +26,7 @@ export default function HistorySection() {
           alt="healthy reef"
           loading="lazy"
           style={{
-            width: 400,          // smaller size
+            width: 200,          // smaller size
             height: "auto",
             borderRadius: 16,    // rounded corners
             objectFit: "cover",
@@ -38,7 +38,7 @@ export default function HistorySection() {
           alt="healthy reef"
           loading="lazy"
           style={{
-            width: 400,          // smaller size
+            width: 200,          // smaller size
             height: "auto",
             borderRadius: 16,    // rounded corners
             objectFit: "cover",
@@ -50,7 +50,7 @@ export default function HistorySection() {
           alt="unsplash"
           loading="lazy"
           style={{
-            width: 400,          // smaller size
+            width: 200,          // smaller size
             height: "auto",
             borderRadius: 16,    // rounded corners
             objectFit: "cover",
@@ -81,7 +81,7 @@ export default function HistorySection() {
           alt="map"
           loading="lazy"
           style={{
-            width: 500,          // smaller size
+            width: 200,          // smaller size
             height: "auto",
             borderRadius: 16,    // rounded corners
             objectFit: "cover",
@@ -93,7 +93,7 @@ export default function HistorySection() {
           alt="severity"
           loading="lazy"
           style={{
-            width: 800,          // smaller size
+            width: 200,          // smaller size
             height: "auto",
             borderRadius: 16,    // rounded corners
             objectFit: "cover",
@@ -117,7 +117,7 @@ export default function HistorySection() {
           alt="heatmap"
           loading="lazy"
           style={{
-            width: 600,          // smaller size
+            width: 200,          // smaller size
             height: "auto",
             borderRadius: 16,    // rounded corners
             objectFit: "cover",
@@ -128,7 +128,7 @@ export default function HistorySection() {
         src="/loess trend .png"
         alt="trend img"
         style={{
-          width: 650,
+          width: 250,
           height: "auto",
           borderRadius: 12,
           objectFit: "cover",
@@ -153,17 +153,17 @@ export default function HistorySection() {
       <img
         src="/linear_regress.png"
         alt="Left"
-        style={{ width: 260, height: 200, objectFit: "cover", borderRadius: 14, boxShadow: "0 8px 22px rgba(0,0,0,0.15)" }}
+        style={{ width: 200, height: 200, objectFit: "cover", borderRadius: 14, boxShadow: "0 8px 22px rgba(0,0,0,0.15)" }}
       />
       <img
         src="/tuned_forest.png"
         alt="Center"
-        style={{ width: 350, height: 300, objectFit: "cover", borderRadius: 16, boxShadow: "0 10px 28px rgba(0,0,0,0.18)" }}
+        style={{ width: 200, height: 300, objectFit: "cover", borderRadius: 16, boxShadow: "0 10px 28px rgba(0,0,0,0.18)" }}
       />
       <img
         src="/XGBoost.png"
         alt="Right"
-        style={{ width: 260, height: 200, objectFit: "cover", borderRadius: 14, boxShadow: "0 8px 22px rgba(0,0,0,0.15)" }}
+        style={{ width: 200, height: 200, objectFit: "cover", borderRadius: 14, boxShadow: "0 8px 22px rgba(0,0,0,0.15)" }}
       />
     </div>
       <h2>Looking Ahead</h2>
@@ -188,7 +188,7 @@ export default function HistorySection() {
           alt="projected bleach"
           loading="lazy"
           style={{
-            width: 800,          // smaller size
+            width: 200,          // smaller size
             height: "auto",
             borderRadius: 16,    // rounded corners
             objectFit: "cover",
