@@ -216,9 +216,29 @@ export default function HistorySection() {
         conservation efforts such as fishing restrictions, increased coral shading, and other temperature
         precautions.</p>
         </div>
-      <h2>Links</h2>
-      <p>Global Bleaching Environment Data set: <a>https://www.kaggle.com/datasets/pnminh95/global-bleaching-environmental</a></p>
-      <p>Github: <a>https://github.com/bstrong2017/Data-Driven-Solutions-for-Oceania-Reefs.git</a></p>
+        <h2>Links</h2>
+<p>
+  Global Bleaching Environment Data set:{" "}
+  <a
+    href="https://www.kaggle.com/datasets/pnminh95/global-bleaching-environmental"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Kaggle Dataset
+  </a>
+</p>
+
+<p>
+  GitHub:{" "}
+  <a
+    href="https://github.com/bstrong2017/Data-Driven-Solutions-for-Oceania-Reefs.git"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    View Project Repository
+  </a>
+</p>
+
       <h2>References</h2>
       <div style={{ textAlign: "left", marginTop: 20 }}>
       <p>pnminh95. (n.d.). Global bleaching environmental [Data set]. Kaggle. Global Bleaching Environmental dataset </p>
