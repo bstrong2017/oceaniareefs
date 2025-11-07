@@ -10,19 +10,32 @@ export default function HeroSection() {
         alt="Great Barrier Reef"
         className="absolute top-1/2 left-1/2 min-w-full min-h-full transform -translate-x-1/2 -translate-y-1/2 z-0"
       /> */}
-      <div style={{
+      <div
+        style={{
           width: "100%",
           display: "flex",
           justifyContent: "center",
-          overflow: "visible",
           position: "relative",
-          zIndex: 5,           // keep fish above the dark overlay
-          padding: "12px 0"
-        }}>
-  <img src="/9229453.jpg" 
-  alt="Fish" />
-  
-</div>
+          zIndex: 5,
+          padding: "16px 0",
+        }}
+      >
+        <img
+          src="/9229453.jpg"
+          alt="Fish"
+          loading="lazy"
+          style={{
+            // On big screens: up to 320px wide
+            // On phones: shrink to ~70% of viewport width
+            width: "min(320px, 70vw)",
+            height: "auto",
+            borderRadius: 16,
+            objectFit: "contain",
+            boxShadow: "0 8px 20px rgba(0,0,0,0.25)",
+          }}
+        />
+      </div>
+
 <div className="absolute bottom-0 left-20 w-6 h-6 bg-white/30 rounded-full animate-bounce delay-200"></div>
 
 

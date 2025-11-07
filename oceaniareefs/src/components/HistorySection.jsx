@@ -20,7 +20,7 @@ export default function HistorySection() {
         organisms. While coral reefs contain and provide shelter to over 800 different aquatic 
         species, the structure of coral reefs protects coastal communities.
       </p>
-      <div style={{  display: "flex",textAlign: "center", gap: "20px", marginTop: 20 }}>
+      <div style={{  display: "flex",textAlign: "left", gap: "20px", marginTop: 20 }}>
       <img
           src="/health_reef.png"
           alt="healthy reef"
@@ -153,17 +153,17 @@ export default function HistorySection() {
       <img
         src="/linear_regress.png"
         alt="Left"
-        style={{ width: 200, height: 200, objectFit: "cover", borderRadius: 14, boxShadow: "0 8px 22px rgba(0,0,0,0.15)" }}
+        style={{ width: 300, height: 250, objectFit: "cover", borderRadius: 14, boxShadow: "0 8px 22px rgba(0,0,0,0.15)" }}
       />
       <img
         src="/tuned_forest.png"
         alt="Center"
-        style={{ width: 200, height: 300, objectFit: "cover", borderRadius: 16, boxShadow: "0 10px 28px rgba(0,0,0,0.18)" }}
+        style={{ width: 300, height: 250, objectFit: "cover", borderRadius: 16, boxShadow: "0 10px 28px rgba(0,0,0,0.18)" }}
       />
       <img
         src="/XGBoost.png"
         alt="Right"
-        style={{ width: 200, height: 200, objectFit: "cover", borderRadius: 14, boxShadow: "0 8px 22px rgba(0,0,0,0.15)" }}
+        style={{ width: 350, height: 250, objectFit: "cover", borderRadius: 14, boxShadow: "0 8px 22px rgba(0,0,0,0.15)" }}
       />
     </div>
       <h2>Looking Ahead</h2>
@@ -176,12 +176,6 @@ export default function HistorySection() {
         scenario. In the model, we see that 2020, 2022, 2024, 2029, and 2030 have sharp increases in bleaching. 
         In researched data from CNN, we see that the years 2020, 2022, and 2024 all had temperature spikes leading 
         to increased coral bleaching (Yeung, 2025).</p>
-        <p>These data-driven insights emphasize the importance of developing early monitoring systems 
-        that merge real-time satellite data, temperature sensing, as well as machine learning to detect any 
-        preemptive warnings. With the  most important contribution to early monitoring is providing
-        the most recent data to have a thorough system for conservation. The implementation of these early monitoring systems introduces a new era for 
-        conservation efforts such as fishing restrictions, increased coral shading, and other temperature
-        precautions.</p>
         <div style={{ justifyContent: 'center'}}>
         <img
           src="/proj_bleaching_2.png"
@@ -195,6 +189,12 @@ export default function HistorySection() {
             boxShadow: "0 4px 12px rgba(0,0,0,0.18)"
           }}
         />
+         <p>These data-driven insights emphasize the importance of developing early monitoring systems 
+        that merge real-time satellite data, temperature sensing, as well as machine learning to detect any 
+        preemptive warnings. With the  most important contribution to early monitoring is providing
+        the most recent data to have a thorough system for conservation. The implementation of these early monitoring systems introduces a new era for 
+        conservation efforts such as fishing restrictions, increased coral shading, and other temperature
+        precautions.</p>
         </div>
       <h2>Links</h2>
       <p>Global Bleaching Environment Data set: <a>https://www.kaggle.com/datasets/pnminh95/global-bleaching-environmental</a></p>
