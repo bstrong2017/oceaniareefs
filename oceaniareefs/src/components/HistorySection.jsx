@@ -61,7 +61,7 @@ export default function HistorySection() {
       <h2>Data Methods</h2>
       <p>Imported and cleaned Kaggle’s Global Bleaching Environmental dataset (limited to Oceania → 
         2,956 entries).</p>
-      <p>Focused on 6 key coral reef
+      <p>This analysis focused on 6 key coral reef
         regions in Australia with high
         bleaching rates.</p>
       <div >
@@ -138,18 +138,17 @@ export default function HistorySection() {
       </div>
       <h2>Innovative Solutions</h2>
       <p>Using a baseline linear regression model, Random Forest model, Extreme Gradient Boosting model, and 
-        Support Vector regression model, we whether bleaching can be predicted. As the baseline 
-        linear regression did not perform well, with a accuracy of 29%, we tested the Random Forest, XGBoost model,
-       and SVR model. The accuracy improved the most under the Random Forest model. 
-       We created a Predicted coral bleaching under environmental stress scenario to observe how bleaching 
-        might change. The model is made to mimic temperature increases paired with different increases in 
-        thermal stress anomalies. The predictive scenarios show us potential peaks between 2018 to 2030. 
-        We found that in instances where the temperature increases 0.9 and the thermal stress anomalies 
-        increase 0.6 yearly, there is a sharp increase in bleaching followed by steep decline and plateau. 
-        Looking at years past 2018, we can compare the real change in bleaching percentage to the predicted 
-        scenario. In the model, we see that 2020, 2022, 2024, 2029, and 2030 have sharp increases in bleaching. 
-        In researched data from CNN, we see that the years 2020, 2022, and 2024 all had temperature spikes leading 
-        to increased bleaching (Yeung, 2025). </p>
+        Support Vector regression model, we observe whether bleaching can be predicted. As the baseline 
+        linear regression (far left graph) did not perform well, with a accuracy of 29%, we tested the Random Forest, XGBoost model,
+       and SVR model. This is because the relationship between the environmental factors 
+       (Climate, sea surface temperature, and thermal anomalies), does not have a linear relationship 
+       with coral bleaching. Therefore, models that could capture non-linear relationship were better suited. 
+       The accuracy improved the most under the Random Forest model (center graph). The Random Forest model 
+       is good at handling lots of features and finding the relationship between features and predicted 
+       factors. In the limited dataset, the Random Forest model had an R-squared of 0.82. Meaning that it 
+       captures 82% of the variation in the relationship. This also means that the model can predict the 
+       relationship to bleaching with greater accuracy. 
+       </p>
       <div style={{ display: "flex", justifyContent: "center", gap: 20, flexWrap: "wrap", padding: 24 }}>
       <img
         src="/linear_regress.png"
@@ -168,12 +167,35 @@ export default function HistorySection() {
       />
     </div>
       <h2>Looking Ahead</h2>
-      <p>These data-driven insights emphasize the severity of the development of early monitoring systems 
+      <p>In the figure below, we created predictive scenarios to show us potential peaks between 2018 to 2030.
+        The Predicted graph shows coral bleaching under environmental stress scenarios. The model is made 
+        to mimic temperature increases paired with different increases in thermal stress anomalies. 
+        We found that in instances where the temperature increases 0.9 and the thermal stress anomalies 
+        increase 0.6 yearly, there is a sharp increase in bleaching followed by steep decline and plateau. 
+        Looking at years past 2018, we can compare the real change in bleaching percentage to the predicted 
+        scenario. In the model, we see that 2020, 2022, 2024, 2029, and 2030 have sharp increases in bleaching. 
+        In researched data from CNN, we see that the years 2020, 2022, and 2024 all had temperature spikes leading 
+        to increased coral bleaching (Yeung, 2025).</p>
+        <p>These data-driven insights emphasize the importance of developing early monitoring systems 
         that merge real-time satellite data, temperature sensing, as well as machine learning to detect any 
-        preemptive warnings.The implementation of these early monitoring systems introduces a new era for 
+        preemptive warnings. With the  most important contribution to early monitoring is providing
+        the most recent data to have a thorough system for conservation. The implementation of these early monitoring systems introduces a new era for 
         conservation efforts such as fishing restrictions, increased coral shading, and other temperature
-        precautions. The most important contribution to early monitoring will be providing the most recent 
-        data to have a thorough system for conservation. </p>
+        precautions.</p>
+        <div style={{ justifyContent: 'center'}}>
+        <img
+          src="/proj_bleaching_2.png"
+          alt="projected bleach"
+          loading="lazy"
+          style={{
+            width: 800,          // smaller size
+            height: "auto",
+            borderRadius: 16,    // rounded corners
+            objectFit: "cover",
+            boxShadow: "0 4px 12px rgba(0,0,0,0.18)"
+          }}
+        />
+        </div>
       <h2>Links</h2>
       <p>Global Bleaching Environment Data set: <a>https://www.kaggle.com/datasets/pnminh95/global-bleaching-environmental</a></p>
       <p>Github: </p>
