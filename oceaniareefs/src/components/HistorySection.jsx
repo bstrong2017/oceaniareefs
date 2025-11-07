@@ -20,17 +20,23 @@ export default function HistorySection() {
         organisms. While coral reefs contain and provide shelter to over 800 different aquatic 
         species, the structure of coral reefs protects coastal communities.
       </p>
-      <div style={{  display: "flex",textAlign: "left", gap: "20px", marginTop: 20 }}>
+      <div style={{   display: "flex",
+      flexWrap: "wrap",          // allow wrapping on small screens
+      justifyContent: "center",  // center images in the row
+      gap: 20,
+      marginTop: 20, }}>
+
       <img
           src="/health_reef.png"
           alt="healthy reef"
           loading="lazy"
           style={{
-            width: 200,          // smaller size
+            width: "min(220px, 80vw)",  // 220px on desktop, shrinks on phones
             height: "auto",
-            borderRadius: 16,    // rounded corners
+            borderRadius: 16,
             objectFit: "cover",
-            boxShadow: "0 4px 12px rgba(0,0,0,0.18)"
+            boxShadow: "0 4px 12px rgba(0,0,0,0.18)",
+            display: "block",
           }}
         />
          <img
@@ -38,11 +44,12 @@ export default function HistorySection() {
           alt="healthy reef"
           loading="lazy"
           style={{
-            width: 200,          // smaller size
+            width: "min(220px, 80vw)",  // 220px on desktop, shrinks on phones
             height: "auto",
-            borderRadius: 16,    // rounded corners
+            borderRadius: 16,
             objectFit: "cover",
-            boxShadow: "0 4px 12px rgba(0,0,0,0.18)"
+            boxShadow: "0 4px 12px rgba(0,0,0,0.18)",
+            display: "block",
           }}
         />
         <img
@@ -50,11 +57,12 @@ export default function HistorySection() {
           alt="unsplash"
           loading="lazy"
           style={{
-            width: 200,          // smaller size
+            width: "min(220px, 80vw)",  // 220px on desktop, shrinks on phones
             height: "auto",
-            borderRadius: 16,    // rounded corners
+            borderRadius: 16,
             objectFit: "cover",
-            boxShadow: "0 4px 12px rgba(0,0,0,0.18)"
+            boxShadow: "0 4px 12px rgba(0,0,0,0.18)",
+            display: "block",
           }}
         />
       </div>
