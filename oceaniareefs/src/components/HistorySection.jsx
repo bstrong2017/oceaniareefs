@@ -13,9 +13,9 @@ export default function HistorySection() {
       </h2>
       <h4>Discover more about Oceania Coral Reef with our data analysis of bleaching trends</h4>
       <p className="max-w-2xl mx-auto text-gray-600 leading-relaxed">
-        Our analysis is partitioned into five parts —
-        Background, Environmental Drivers, Exploratory Data Analysis, Bleaching Trends, 
-        and Predictive modeling.Although coral reefs only make up a small percentage of 
+        Our analysis is partitioned into <strong>five parts</strong> —
+        Background & Data Methods, Environmental Drivers, Exploratory Data Analysis, Predictive modeling,
+        and Innovative Solutions. Although coral reefs only make up a small percentage of 
         the ocean population, they provide numerous benefits to the ecosystem and biodiverse 
         organisms. While coral reefs contain and provide shelter to over 800 different aquatic 
         species, the structure of coral reefs protects coastal communities.
@@ -66,6 +66,62 @@ export default function HistorySection() {
           }}
         />
       </div>
+      <h2>Background</h2>
+      <p>Coral bleaching occurs when reefs experience environmental stress, primarily rising 
+        ocean temperatures can cause corals to expel the algae that they rely on for energy 
+        and their color. Without the algae, corals turn white and become vulnerable to disease 
+        and mortality. Bleaching events have increased in frequency and severity as climate change 
+        drives high heat exposure. Because bleaching can spread rapidly across large reef systems, 
+        developing early detection and prediction tools is essential for guiding conservation efforts 
+        and supporting cost-effective restoration planning.</p>
+        <h2>Project Goals</h2>
+        <div>
+        <p style={{
+  border: "2px solid #000",
+  backgroundColor: "#E0FFFF",   // light aqua (easy on the eyes)
+  padding: "8px 12px",
+  borderRadius: "8px",
+  display: "inline-block"
+}}>
+  Discover Bleaching Patterns
+</p>
+        </div>
+        <div>
+        <p style={{
+  border: "2px solid #000",
+  backgroundColor: "#E0FFFF",   // light aqua (easy on the eyes)
+  padding: "8px 12px",
+  borderRadius: "8px",
+  display: "inline-block"
+}}>
+ Analyze Environmental Trends
+</p>
+<div>
+        <p style={{
+  border: "2px solid #000",
+  backgroundColor: "#E0FFFF",   // light aqua (easy on the eyes)
+  padding: "8px 12px",
+  borderRadius: "8px",
+  display: "inline-block"
+}}>
+  Predict Potential Bleaching Events
+</p>
+        </div>
+        <div>
+        <p style={{
+  border: "2px solid #000",
+  backgroundColor: "#E0FFFF",   // light aqua (easy on the eyes)
+  padding: "8px 12px",
+  borderRadius: "8px",
+  display: "inline-block"
+}}>
+   Create Cost Effective Solutions
+</p>
+        </div>
+        </div>
+
+
+
       <h2>Data Methods</h2>
       <p>Imported and cleaned Kaggle’s Global Bleaching Environmental dataset (limited to Oceania → 
         2,956 entries).</p>
@@ -114,10 +170,46 @@ export default function HistorySection() {
             display: "block"
           }}
         />
-        
-
       </div>
-      <h2>Discovery</h2>
+      <h2>Environmental Factors</h2>
+      <p>These environmental factors are what impact coral reefs in the Oceania Region, such as temperature,
+        wind speed, and frequency of natural disasters.</p>
+      <h3>🌡 Temperature</h3>
+      <h3>🌊 Ocean depth</h3>
+      <h3>🥵 Thermal Stress Anomalies</h3>
+      <h3>🥵 Thermal Stress Anomalies Degree Heating Weeks</h3>
+      <h3>🌊🌡️ ea Surface Stress Anomalies</h3>
+      <h3>🌊🌡️ Sea Surface Stress Anomalies Degree Heating Weeks</h3>
+      <h3>💨 Windspeed</h3>
+      <h3>🌫️ Turbidity</h3>
+      <h3>🌪️ Cyclone Frequency</h3>
+      <h2>Exploratory Data Analysis</h2>
+      <p>In the yearly coral
+      bleaching events graph, we plotted across the
+      major Australian reefs from
+      1990 to 2017. The most
+      significant bleaching that was
+      recorded occurred in  1998, 2002, and 2016.</p>
+      <div style={{   display: "flex",
+        flexWrap: "wrap",
+        justifyContent: "center",
+        gap: 20,
+        marginTop: 20}}
+        >
+          <img
+          src="/yearly_bleaching.png"
+          alt="yearly"
+          loading="lazy"
+          style={{
+            width: "min(220px, 80vw)",
+            height: "auto",
+            borderRadius: 16,
+            objectFit: "cover",
+            boxShadow: "0 4px 12px rgba(0,0,0,0.18)",
+            display: "block"
+          }}
+        />
+        </div>
       <p>The environmental factors provided show a clear correlation to bleaching; as climate temperature 
         peaks in intense ranges, so does bleaching. 
         Coral Bleaching Trends:
@@ -156,14 +248,14 @@ export default function HistorySection() {
         }}
       />
       </div>
-      <h2>Innovative Solutions</h2>
+      <h2>Predictive Modeling</h2>
       <p>Using a baseline linear regression model, Random Forest model, Extreme Gradient Boosting model, and 
         Support Vector regression model, we observe whether bleaching can be predicted. As the baseline 
-        linear regression (far left graph) did not perform well, with a accuracy of 29%, we tested the Random Forest, XGBoost model,
+        linear regression (Dark Blue graph) did not perform well, with a accuracy of 29%, we tested the Random Forest, XGBoost model,
        and SVR model. This is because the relationship between the environmental factors 
        (Climate, sea surface temperature, and thermal anomalies), does not have a linear relationship 
        with coral bleaching. Therefore, models that could capture non-linear relationship were better suited. 
-       The accuracy improved the most under the Random Forest model (center graph). The Random Forest model 
+       The accuracy improved the most under the Random Forest model (Light Blue graph). The Random Forest model 
        is good at handling lots of features and finding the relationship between features and predicted 
        factors. In the limited dataset, the Random Forest model had an R-squared of 0.82. Meaning that it 
        captures 82% of the variation in the relationship. This also means that the model can predict the 
@@ -186,7 +278,7 @@ export default function HistorySection() {
         style={{ width: 350, height: 250, objectFit: "cover", borderRadius: 14, boxShadow: "0 8px 22px rgba(0,0,0,0.15)" }}
       />
     </div>
-      <h2>Looking Ahead</h2>
+      <h2>Innovative Solutions</h2>
       <p>In the figure below, we created predictive scenarios to show us potential peaks between 2018 to 2030.
         The Predicted graph shows coral bleaching under environmental stress scenarios. The model is made 
         to mimic temperature increases paired with different increases in thermal stress anomalies. 
@@ -236,6 +328,16 @@ export default function HistorySection() {
     rel="noopener noreferrer"
   >
     View Project Repository
+  </a>
+</p>
+<p>
+  Data Driven Oceania Analysis: {" "}
+  <a
+    href="https://fau-my.sharepoint.com/:p:/g/personal/bucka2024_fau_edu/IQAv1pqnYf7kRIH1Fvyx_P8OAWjjoW7gYaRG5pmUVPQ9CX0?e=Tx3urH"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+  Presentation Powerpoint
   </a>
 </p>
 
